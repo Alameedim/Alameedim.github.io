@@ -126,24 +126,36 @@ aside {
     padding-left: 1.5rem;
 }
 
+
+
 h1 {
     text-align: center;
     font-family: 'robotoslab', Arial, sans-serif;
     font-weight:normal;
     font-style:normal;
     
+    text-transform: uppercase;
+    font-size:6rem;
+    margin: 0;
+    letter-spacing: .5rem;
+    color:darkred;
+    text-shadow:.09375rem .09375rem .09375rem #000;
+    font-family:'Alfa Slab One', Garamond, serif;
+    text-align:center;
 
 }
 
 
 .highlight {
+    
+    
     font-family: josefinslab, Garamond, serif;
     letter-spacing: 0.125rem;
     font-size: 3.75rem;
     margin: 1.125rem;
     text-align: center;
-    background-color: black;
-    color: aliceblue;
+    background-color:cyan;
+    color: Black;
 
     
 }
@@ -152,6 +164,8 @@ h1 {
     font-size: .35rem;
     display: block;
     margin-top: .4rem;
+    border-bottom: 2px;
+    border-bottom-color: black
 }
 
 .subsection {
@@ -163,13 +177,18 @@ h1 {
 
     /* stroke */
 
+nav{
+    text-align: center;
+    display:inline-block;
+    
+}
 
-nav.stroke ul li a,
+
 nav.fill ul li a {
   position: relative;
     text-align: center;
 }
-nav.stroke ul li a:after,
+
 nav.fill ul li a:after {
   position: absolute;
   bottom: 0;
@@ -182,9 +201,8 @@ nav.fill ul li a:after {
   background: #aaa;
   height: 1px;
 }
-nav.stroke ul li a:hover:after {
-  width: 100%;
-}
+
+
 
 nav.fill ul li a {
   transition: all 2s;
@@ -192,7 +210,7 @@ nav.fill ul li a {
 
     
 nav.fill ul li a:after {
-  text-align: left;
+  text-align: center;
   content: '.';
   margin: 0;
   opacity: 0;
@@ -227,41 +245,11 @@ nav.fill ul li a:hover:after {
   }
 }
 
-/* Keyframes */
-@-webkit-keyframes circle {
-  0% {
-    width: 1px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    height: 1px;
-    z-index: -1;
-    background: #eee;
-    border-radius: 100%;
-  }
-  100% {
-    background: #aaa;
-    height: 5000%;
-    width: 5000%;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 0;
-  }
-}
 
 
 
 
-nav {
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-}
+
 
 /*images and overflow*/ 
 
@@ -275,8 +263,11 @@ img{
     margin-right: 1rem;
 }
 
+
+
+
 figcaption{
-    background-color: aqua;
+    background-color: #4CAF50;
     color: black;
     font-style: italic;
     padding: 1px;
